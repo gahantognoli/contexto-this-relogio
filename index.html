@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>TITULO</h1>
+    <p>PARAGRAFO</p>
+    <div>DADOS</div>
+
+    <script>
+        class Relogio {
+
+            constructor() {
+                this._segundos = 0;
+                ///setInterval(function(){console.log(++this._segundos)}, 1000); = NaN
+                setInterval(() => console.log(++this._segundos), 1000); // Funcionando ..
+            }
+        }
+
+        var relogio = new Relogio();
+
+    </script>
+</body>
+
+</html>
